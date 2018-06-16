@@ -1,7 +1,7 @@
 from flask import Flask
 
-app = Flask(__name__)
-@app.route("/")
+myapp = Flask(__name__)
+@myapp.route("/")
 def hello():
     return """
     <html>
@@ -11,4 +11,4 @@ def hello():
     """
 
     if ___name__ == "__main__":
-        app.run(debug=True)
+        myapp.run(debug=True)
