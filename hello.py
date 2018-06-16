@@ -2,12 +2,12 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route("/")
+@myapp.route("/")
 def home():
     return "Hello World"
 
-@app.route("/index")
+@myapp.route("/index")
 def index():
     return "This is index"
 if __name__ == "___main__":
-    app.run(debub=True)
+    myapp.run(debub=True)
